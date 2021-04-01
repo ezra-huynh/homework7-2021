@@ -63,7 +63,7 @@ document.querySelector("#slider").addEventListener("input", function() {
   	volume.innerHTML = this.value + " %";
 	}
 	video.volume = volume.innerHTML/100;
-	console.log("Volume is " + volume.innerHTML + " %");
+	console.log(video.volume);
 });
 
 document.querySelector("#vintage").addEventListener("click", function() {
