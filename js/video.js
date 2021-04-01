@@ -60,7 +60,7 @@ document.querySelector("#slider").addEventListener("input", function() {
 	volume.innerHTML = slider.value;
 	
 	slider.oninput = function() {
-  	volume.innerHTML = this.value + " %";
+  	volume.innerHTML = this.value + "%";
 	}
 	video.volume = volume.innerHTML/100;
 	console.log(video.volume);
