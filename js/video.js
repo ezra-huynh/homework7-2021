@@ -29,16 +29,16 @@ document.querySelector("#faster").addEventListener("click", function() {
 });
 
 document.querySelector("#skip").addEventListener("click", function() {
-	if (video.ended) {
-		console.log("Original location " + video.currentTime);
-		video.currentTime = 0
-		console.log("Going back to beginning");
-		video.play();
+	console.log("Original location " + video.duration);
+	video.curentTime = video.curentTime + 15;
+	if (video.currentTime < video.duration) {
+		console.log("New location " + video.currentTime);
 	}
 	else {
-		console.log("Original location " + video.currentTime);
-		video.currentTime = video.currentTime + 15;
+		video.currentTime = 0
+		console.log("Going back to beginning");
 		console.log("New location " + video.currentTime);
+		video.play();
 	}
 });
 
